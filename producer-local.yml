@@ -1,0 +1,5 @@
+server:
+  port: 9091
+
+app:
+  message: "Producer - Mensagem obtida através do config server"

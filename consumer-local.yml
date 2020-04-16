@@ -1,0 +1,5 @@
+server:
+  port: 9092
+
+app:
+  message: "Consumer - mensagem obtida através do config server"
