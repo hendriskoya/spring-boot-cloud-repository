@@ -3,3 +3,8 @@ server:
 
 app:
   message: "Producer - Teste de refresh"
+
+health:
+  config:
+    enabled: true
+    timeToLive: 60000
