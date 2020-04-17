@@ -6,5 +6,5 @@ app:
 
 health:
   config:
-    enabled: true
+    enabled: false
     timeToLive: 60000
