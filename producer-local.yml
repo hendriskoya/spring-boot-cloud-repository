@@ -1,10 +1,26 @@
+# TOMCAT
 server:
   port: 9091
 
-app:
-  message: "Producer - Teste de refresh"
-
+# CONFIG SERVER
 health:
   config:
     enabled: false
     timeToLive: 60000
+
+# ACTUATOR
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,env,configprops
+
+# SERVICE DISCOVERY
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_CLIENT_SERVICE_URL:http://localhost:8761/eureka}
+
+# APPLICATION
+app:
+  message: "Producer - Teste de refresh"
